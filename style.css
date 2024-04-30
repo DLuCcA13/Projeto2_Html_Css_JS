@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Pixelify Sans", sans-serif;
+}
+body{
+    background: black;
+}
+#container {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hexColor {
+  text-align: center;
+}
+
+#hexColor h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  animation: changeColor 5s infinite alternate;
+}
+
+#hexColor h2 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+#hexColor #btn{
+    width: 210px;
+    height: 50px;
+    font-size: 30px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+#hexColor #btn:hover{
+    background: black;
+    animation: changeColor 5s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: yellow;
+  }
+  40% {
+    color: blue;
+  }
+  60% {
+    color: purple;
+  }
+  80% {
+    color: pink;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@media(max-width:480px){
+#hexColor h1{
+    font-size: 2.5rem;
+}
+#hexColor h2{
+    font-size: 3rem;
+}
+}
+
+@media(max-width:790px){
+    #hexColor h1{
+    font-size: 3.5rem;
+}
+#hexColor h2{
+    font-size: 3rem;
+}
+}
